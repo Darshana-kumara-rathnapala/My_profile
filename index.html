@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>My profile</title>
-    <meta content="width=devise width initial scale" name="viewport">
+    <!--<meta content="width=devise width initial scale" name="viewport">-->
     <style>
         #img1 {
             border-radius: 45px;
             /*padding: 5px;*/
-            width: 1510px;
+            width: 1500px;
             height: 400px;
             position: absolute;
 
         }
-        #img2{
+
+        #img2 {
             width: 400px;
             height: 370px;
             border-radius: 220px;
@@ -22,17 +23,49 @@
             position: absolute;
             vertical-align: middle;
         }
-        header>div>h3{
+
+        header > div > h3 {
             color: red;
             position: absolute;
 
         }
-        header>div>h1{
+
+        header > div > h1 {
             padding-left: 800px;
-            padding-top: 100px;
-            font-size: 45px;
+            padding-top: 50px;
+            font-size: 60px;
             color: white;
             position: absolute;
+        }
+
+        .rect {
+            position: absolute;
+            bottom: 0px;
+            width: 1500px;
+            height: 200px;
+            padding-bottom: 80px;
+            border-radius: 50px;
+            background-color: lightgrey;
+
+        }
+
+        main > section > h1 {
+            position: absolute;
+            padding-top: 450px;
+            padding-left: 650px;
+            font-size: 40px;
+            color: darkred;
+            font-family: "Baskerville Old Face";
+        }
+        main>section>p#about{
+            position: absolute;
+            font-size: 30px;
+            padding-top: 500px;
+            padding-left: 100px;
+            padding-right: 20px;
+            text-align: center;
+            font-family: "Book Antiqua";
+
         }
     </style>
 
@@ -42,6 +75,10 @@
     <div>
         <img id="img1" src="assets/images/875747.jpg">
         <img id="img2" src="assets/images/myphoto.jpg">
+        <img src="assets/images/mobile.jpg"
+             style="position: absolute;padding-left: 1000px;padding-top: 310px;width: 70px;">
+        <img src="assets/images/email.png"
+             style="position: absolute;padding-left: 1150px;padding-top: 310px;width: 80px;">
         <h3 style="padding-left: 1000px">About</h3>
         <h3 style="padding-left: 1100px">Project</h3>
         <h3 style="padding-left: 1200px">Contact</h3>
@@ -50,9 +87,20 @@
 </header>
 
 <main>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section>
+        <div class="rect"></div>
+        <h1>About me</h1>
+        <p id="about">I'm 23 years old and live in galle, also study as a Software Enginier in Institute of Java and Software
+            Enginier. Before this I did IT basic programme at ICBT. I expect show my skill from developed projects vis this website. </p>
+    </section>
+    <section>
+        <h2 style="bottom: 0px; position: absolute">hfkgfkgfgf</h2>
+    </section>
+    <section>
+        <p style="position: absolute;padding-top: 1000px">n flexbox is set to column. Therefore, when working with
+            flexbox it is easier to think about the main and cross axis rather than inline and block. The justify-
+            properties are always used to align on the main axis, the align- properties on the cross axis.</p>
+    </section>
     <section></section>
     <section></section>
 </main>
