@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>css assignment_02</title>
     <link href="assets/css/normalize.css" rel="stylesheet">
-
+    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
     <style>
         header > h1 {
             color: red;
@@ -41,25 +41,40 @@
             color: aqua;
         }
 
+        /*start navigation part in main*/
         nav > ul > li {
             list-style: none;
-            width: 80px;
+            /*width: 100px;*/
             font-size: 20px;
             font-family: Forte;
-            padding-top: 30px;
+            padding-left: 5px;
+            padding-bottom: 40px;
         }
 
-        nav > ul > li:hover {
+        nav > ul > li > a {
+            /*text-decoration: none;*/
+            margin-left: 20px;
+            color: white;
+        }
+
+        nav > ul > li > a:hover {
             cursor: pointer;
             color: aqua;
         }
 
-        body > main {
+        nav > ul > li > i {
             position: absolute;
-            /*background-color: darkblue;*/
-            top: 63px;
+            left: 15px;
+            color: rgba(161, 26, 26, 0.91);
+            font-size: 30px;
+        }
+
+        /*end navigation part in main*/
+        body > main {
+            position: relative;
+            /*top: 63px;*/
+            /*width: 900px;*/
             height: auto;
-            /*width: 400px;*/
         }
 
         main > nav {
@@ -70,27 +85,53 @@
             bottom: 0;
         }
 
-        main > img {
+        /*main > img {
             position: relative;
             margin-left: 310px;
             margin-top: 20px;
 
+        }*/
+
+        /*Strt image section (main)*/
+        main > section:nth-child(2) {
+            position: relative;
+            margin-left: 300px;
+            top: 4px;
+            height: 300px;
+            /*border: 1px solid red;*/
         }
 
+        main > section:nth-child(2) > div {
+            position: absolute;
+            display: inline;
+            height: 305px;
+            width: calc(100% / 3);
+            border-left: 3px solid white;
+            background-image: url("assets/image/images.jpg");
+            background-size: cover;
+        }
+
+        /*End image section (main)*/
+
         /*Pharagraf content section*/
-        body > main > section {
+        .section-p {
             cursor: grabbing;
-            margin-left: 310px;
+            min-height: 300px;
+            font-size: 20px;
+            margin-left: 305px;
         }
 
         /*footer section*/
         body > main > footer {
-            font-size: 30px;
+            font-size: 15px;
+            text-align: center;
+            height: 29px;
+            /*margin:0;*/
             font-family: "Bodoni MT Black";
             position: relative;
             color: white;
             background-color: black;
-            width: 100vw;
+            width: 100%;
             /*top: 10px;*/
         }
     </style>
@@ -109,38 +150,30 @@
 <main>
     <nav>
         <ul>
-            <li>Menu</li>
-            <li>Service</li>
-            <li>Contact</li>
-            <li>About us</li>
+            <li><i class="fas fa-home"></i><a href="index.html">Menu</a></li>
+            <li><i class="fas fa-cogs"></i><a href="index.html">Service</a></li>
+            <li><i class="fas fa-mobile-alt"></i><a href="index.html">Contact</a></li>
+            <li><i class="fas fa-user-tie"></i><a href="index.html">About us</a></li>
         </ul>
     </nav>
-    <img alt="" src="assets/image/monkey.gif">
     <section>
-        <p>However, the web would be a boring place if all websites looked like that. Using CSS you can control However,
-            the
-            web
-            would be a boring place if all websites looked like that. Using CSS you can control
-            exactly how HTML elements look in the browser, presenting your markup using whatever design you like
-
-        <p>However, the web would be a boring place if all websites looked like that. Using CSS you can control However,
-            the
-            web
-            would be a boring place if all websites looked like that. Using CSS you can control
-            exactly how HTML elements look in the browser, presenting your markup using whatever design you like
-
-        <p>However, the web would be a boring place if all websites looked like that. Using CSS you can controlHowever,
-            the
-            web
-            would be a boring place if all websites looked like that. Using CSS you can control
-            exactly how HTML elements look in the browser, presenting your markup using whatever design you like
-        <p>However, the web would be a boring place if all websites looked like that. Using CSS you can controlHowever,
-            the
-            web
-            would be a boring place if all websites looked like that. Using CSS you can control
-            exactly how HTML elements look in the browser, presenting your markup using whatever design you like
+        <div></div>
+        <div style="left: calc((100%/3))"></div>
+        <div style="right: 0"></div>
     </section>
-        <footer> The footer</footer>
+    <section class="section-p">
+        <p>However, the web would be a boring place if all websites looked like that. Using CSS you can control However,
+            the b would be a boring place if all websites looked like that. Using CSS you can control
+            exactly how HTML elements look in the browser, presenting your markup using whatever design you like
+        <p>However, the web would be a boring place if all websites looked like that. Using CSS you can control However,
+            the b would be a boring place if all websites looked like that. Using CSS you can control
+            exactly how HTML elements look in the browser, presenting your markup using whatever design you like
+        <p>However, the web would be a boring place if all websites looked like that. Using CSS you can control However,
+            the b would be a boring place if all websites looked like that. Using CSS you can control
+            exactly how HTML elements look in the browser, presenting your markup using whatever design you like
+
+    </section>
+    <footer> @Developed by Darshana</footer>
 </main>
 </body>
 
