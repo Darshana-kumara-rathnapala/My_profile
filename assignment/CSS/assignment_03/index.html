@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS assignment_03</title>
+    <style>
+        main {
+            position: relative;
+            border: 2px solid red;
+            height: auto;
+        }
+
+        /*Start last FIXED section*/
+        .fixed-section{
+            position: relative;
+            height: 690px;
+            /*border: 2px solid green;*/
+        }
+
+        main > section:nth-child(4) > div:first-child {
+            position: fixed;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border: 20px solid saddlebrown;
+            border-radius: 300px;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) {
+            position: fixed;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            width: 260px;
+            height: 260px;
+            border: 20px solid orangered;
+            border-radius: 200px;
+        }
+
+        /*End last FIXED section*/
+
+        /*Start First section*/
+        main > section:first-child > div:nth-child(1) {
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            width: 270px;
+            height: 270px;
+            background-color: blue;
+            border-radius: 200px;
+        }
+
+        h3 {
+            margin-top: 120px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        /*End First section*/
+
+        /*Start Second section*/
+        main > section:nth-child(2) > div {
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            width: 270px;
+            height: 270px;
+            background-color: deeppink;
+            border-radius: 200px;
+        }
+
+        /*End Second section*/
+
+        /*Start 3rd section*/
+        main > section:nth-child(3) > div {
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            width: 270px;
+            height: 270px;
+            background-color: rebeccapurple;
+            border-radius: 200px;
+        }
+
+        /*End 3rd section*/
+    </style>
+</head>
+<body>
+<main>
+    <section class="fixed-section">
+        <div><h3>Hello</h3></div>
+    </section>
+
+    <section class="fixed-section">
+        <div><h3>Welcome to</h3></div>
+    </section>
+
+    <section class="fixed-section">
+        <div><h3 style="font-size: 35px;margin-top: 90px">Instiute of java and Software Enginering</h3></div>
+    </section>
+
+    <section>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+</body>
+</html>
