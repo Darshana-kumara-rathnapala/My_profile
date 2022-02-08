@@ -137,6 +137,57 @@
             width: 100%;
             /*top: 10px;*/
         }
+        /*--------------Media Queries----------*/
+        @media all and (min-width: 250px) and (max-width: 374px){
+            section>p{
+                font-size: 15px;
+            }
+            .ul{
+                /*font-size: 20px;*/
+                font-family: "Agency FB";
+            }
+            footer{
+                font-size: 10px !important;
+            }
+            main>section:nth-child(2){
+                height: 500px !important;
+            }
+        }
+        @media all and (min-width: 250px) and (max-width: 767px) {
+            header > h1 {
+                width: fit-content;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                font-size: 40px;
+            }
+
+            header > ul {
+                width: fit-content;
+                height: fit-content;
+                padding-left: 0;
+                font-size: 15px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin-bottom: 0;
+
+            }
+            main > nav {
+                display: none;
+            }
+            main > section:nth-child(2) {
+                height: 700px;
+            }
+            main>section:nth-child(2) {
+                margin-left:0;
+                flex-direction: column;
+            }
+            .section-p {
+                margin-left:0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -144,9 +195,9 @@
     <h1>IJSE</h1>
     <!--<nav>home contact</nav>-->
     <ul>
-        <li>Home</li>
-        <li>Servise</li>
-        <li>Contact</li>
+        <li class="ul">Home</li>
+        <li class="ul">Servise</li>
+        <li class="ul">Contact</li>
     </ul>
 </header>
 
