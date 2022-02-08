@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/assignment/CSS/CSS.iml" filepath="$PROJECT_DIR$/assignment/CSS/CSS.iml" />
       <module fileurl="file://$PROJECT_DIR$/My_profile.iml" filepath="$PROJECT_DIR$/My_profile.iml" />
       <module fileurl="file://$PROJECT_DIR$/assignment/CSS/assignment_04/assignment_04.iml" filepath="$PROJECT_DIR$/assignment/CSS/assignment_04/assignment_04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/assignment/CSS/assignment_05/assignment_05.iml" filepath="$PROJECT_DIR$/assignment/CSS/assignment_05/assignment_05.iml" />
     </modules>
   </component>
 </project>
