@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Assignment</title>
+    <style>
+        section>div{
+            position: absolute;
+            top: 300px;
+            left: 0;
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            border-radius: 20px;
+
+            animation-name: test;
+            animation-iteration-count: infinite;
+            animation-duration: 8s;
+            animation-direction: alternate;
+            /*animation-fill-mode: backwards;*/
+        }
+        @keyframes test {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                background-color: blue;
+                transform: rotate(180deg);
+                top: 620px;
+                left:0;
+            }
+            50%{
+                background-color: greenyellow;
+                transform: rotate(360deg);
+                top: 620px;
+                left:1300px;
+            }
+            75%{
+                background-color: aqua;
+                transform: rotate(180deg);
+                top: 0;
+                left:1300px;
+            }
+            100%{
+                background-color: rebeccapurple;
+                transform: rotate(360deg);
+                top: 0;
+                left:0;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+</body>
+</html>
