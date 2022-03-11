@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title class="text-wrap">POS system</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="assets/boostrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/styleSheet.css" rel="stylesheet">
+
+</head>
+<body style="background-color: #c2eadd">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+        <div class="container-fluid">
+            <h3 id="topic_color">pos system</h3>
+            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-3 ms-5" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index2.html">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Items</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="container-fluid">
+    <section class="row p row justify-content-between">
+        <section class="col-sm-12 col-md-6 col-lg-6 bg-light p-0 me-5 mb-5">
+            <h3 class="head m-0">Invoice</h3>
+            <form class="row g-3 p">
+                <div class="col-md-6">
+                    <label class="form-label">Item Code</label>
+                    <input class="form-control" type="text">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Item Name</label>
+                    <input class="form-control" type="text">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Quantity</label>
+                    <input class="form-control" type="number">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Unit price</label>
+                    <input class="form-control" type="number">
+                </div>
+                <div class="col-3 ms-5">
+                    <label class="form-label">Cost</label>
+                    <input class="form-control" type="number">
+                </div>
+            </form>
+        </section>
+
+        <section class="col-sm-12 col-md-5 col-lg-5 fontSize bg-light p-0 mb-4">
+            <h3 class="head m-0">Bill</h3>
+            <form class="row g-3 p">
+                <div class="col-md-10">
+                    <label class="form-label">Total cost :</label>
+                    <label class="form-label">500/=</label>
+                </div>
+                <div class="col-md-10">
+                    <label class="form-label">Net cost :</label>
+                    <label class="form-label">450/=</label>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Cash</label>
+                    <input class="form-control" type="number">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Discount</label>
+                    <input class="form-control" type="number">
+                </div>
+                <div class="col-3 ms-5">
+                    <label class="form-label">Balance</label>
+                    <input class="form-control" type="number">
+                </div>
+            </form>
+        </section>
+    </section>
+
+    <section class="row bg-light col-8 offset-2 rounded">
+        <table class="table table-bordered ">
+            <thead>
+            <tr>
+                <th scope="col">Code</th>
+                <th scope="col">Item</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Unit price</th>
+                <th scope="col">Cost</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Dhal</td>
+                <td>750g</td>
+                <td>78.00</td>
+                <td>100.00</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Rice</td>
+                <td>3kg</td>
+                <td>50.00</td>
+                <td>150.00</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+<!--                <td colspan="2">Larry the Bird</td>-->
+                <td>Sugar</td>
+                <td>800g</td>
+                <td>158.50</td>
+                <td>200.50</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<script src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

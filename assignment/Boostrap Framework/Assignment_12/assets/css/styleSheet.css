@@ -1,0 +1,29 @@
+#nav{
+    background-color: rgb(255, 255, 255);
+}
+#topic_color{
+    color: #0fbe28;
+}
+.fontColor{
+    color: black;
+}
+.p{
+    padding: 10px;
+}
+.p_left{
+    padding-left: 10px;
+}
+.p-0{
+    padding: unset;
+}
+.m-0{
+    margin: unset;
+}
+.head{
+    background-color: lawngreen;
+    text-align: center;
+    margin-top: 5px;
+}
+.fontSize{
+    font-size: 18px;
+}
