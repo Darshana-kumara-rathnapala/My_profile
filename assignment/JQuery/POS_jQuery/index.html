@@ -13,6 +13,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light" id="nav">
         <div class="container-fluid">
+            <img id="img" src=""  alt="">
             <h3 id="topic_color">pos system</h3>
             <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
                     class="navbar-toggler"
@@ -44,23 +45,26 @@
                 <form class="row g-3 p">
                     <div class="col-md-6">
                         <label class="form-label">Item Code</label>
-                        <input class="form-control" type="text">
+                        <input id="itemcode" class="form-control size" type="text">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Item Name</label>
-                        <input class="form-control" type="text">
+                        <input id="itemName" class="form-control size" type="text">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Quantity</label>
-                        <input class="form-control" type="number">
+                        <input id="itemQty" class="form-control size" type="number">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Unit price</label>
-                        <input class="form-control" type="number">
+                        <input id="unitPrice" class="form-control size" type="number">
                     </div>
                     <div class="col-3 ms-5">
                         <label class="form-label">Cost</label>
-                        <input class="form-control" type="number">
+                        <input id="cost" class="form-control size" type="number">
+                    </div>
+                    <div class="col-3 ms-5 mt-5">
+                        <button id="btnAddbil" class="text-black btn-success btn-lg">Add to bill</button>
                     </div>
                 </form>
             </section>
@@ -78,15 +82,15 @@
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Cash</label>
-                        <input class="form-control" type="number">
+                        <input class="form-control size" type="number">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Discount</label>
-                        <input class="form-control" type="number">
+                        <input class="form-control size" type="number">
                     </div>
                     <div class="col-3 ms-5">
                         <label class="form-label">Balance</label>
-                        <input class="form-control" type="number">
+                        <input class="form-control size" type="number">
                     </div>
                 </form>
             </section>
@@ -97,34 +101,34 @@
                 <tr>
                     <th scope="col">Code</th>
                     <th scope="col">Item</th>
-                    <th scope="col">Weight</th>
+                    <th scope="col">Quantity</th>
                     <th scope="col">Unit price</th>
                     <th scope="col">Cost</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="tblOrder">
                 <tr>
-                    <th scope="row">1</th>
+                   <!-- <th scope="row">1</th>
                     <td>Dhal</td>
-                    <td>750g</td>
+                    <td>750</td>
                     <td>78.00</td>
-                    <td>100.00</td>
+                    <td>100.00</td>-->
                 </tr>
-                <tr>
+                <!--<tr>
                     <th scope="row">2</th>
                     <td>Rice</td>
-                    <td>3kg</td>
+                    <td>3</td>
                     <td>50.00</td>
                     <td>150.00</td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <!--                <td colspan="2">Larry the Bird</td>-->
+                    &lt;!&ndash;                <td colspan="2">Larry the Bird</td>&ndash;&gt;
                     <td>Sugar</td>
-                    <td>800g</td>
+                    <td>800</td>
                     <td>158.50</td>
                     <td>200.50</td>
-                </tr>
+                </tr>-->
                 </tbody>
             </table>
         </section>
@@ -140,19 +144,20 @@
                         <div class="form-floating mb-3 col-md-6">
                             <input class="form-control " id="txtCustName" placeholder="name@example.com" type="text">
                             <label for="txtCustName">Customer Name</label>
+
                         </div>
                         <div class="form-floating mb-3 col-md-6">
                             <input class="form-control" id="txtCustId" placeholder="name@example.com" type="text">
-                            <label for="txtCustId">Customer Id</label>
+                            <label for="txtCustId" >Customer Id</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-floating mb-3 col-md-6">
-                            <input class="form-control" id="txtCustAddres" placeholder="name@example.com" type="text">
+                            <input class="form-control size" id="txtCustAddres" placeholder="name@example.com" type="text">
                             <label for="txtCustAddres">Address</label>
                         </div>
                         <div class="form-floating mb-3 col-md-6">
-                            <input class="form-control " id="txtCustContact" placeholder="name@example.com"
+                            <input class="form-control size " id="txtCustContact" placeholder="name@example.com"
                                    type="number">
                             <label for="txtCustContact">Contact</label>
                         </div>
@@ -165,24 +170,24 @@
                 <h2 class="text-center ful_width bg-secondary">Search customer</h2>
                 <div class="row mb-3 p">
                     <form class="d-flex col-6 mx-auto mt-2">
-                        <input aria-label="Search" class="form-control me-1" placeholder="Search" type="search">
+                        <input aria-label="Search" class="form-control me-1 size" placeholder="Search" type="search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
                 <div class="row p">
                     <div class="form-floating mb-3 col-md-6">
-                        <input class="form-control" placeholder="name@example.com" type="text">
-                        <label for="floatingInput">Customer Name</label>
+                        <input class="form-control size" placeholder="name@example.com" type="text">
+                        <label >Customer Name</label>
                     </div>
                     <div class="form-floating mb-3 col-md-6">
-                        <input class="form-control" placeholder="name@example.com" type="text">
-                        <label for="floatingInput">Address</label>
+                        <input class="form-control size" placeholder="name@example.com" type="text">
+                        <label >Address</label>
                     </div>
                 </div>
                 <div class="row p">
                     <div class="form-floating mb-3 col-md-6">
-                        <input class="form-control " placeholder="name@example.com" type="number">
-                        <label for="floatingInput">Contact</label>
+                        <input class="form-control size" placeholder="name@example.com" type="number">
+                        <label >Contact</label>
                     </div>
                     <div class="col">
                         <button class="btn btn-success" type="button">Update</button>
@@ -207,27 +212,27 @@
                 </thead>
                 <tbody id="tbl">
                 <tr>
-                    <td>99121V</td>
+                   <!-- <td>99121V</td>
                     <td>Darshana</td>
                     <td>Galle</td>
-                    <td>077</td>
+                    <td>077</td>-->
                     <!--                <td>100.00</td>-->
                 </tr>
-                <tr>
+                <!--<tr>
                     <td>98121V</td>
                     <td>Uma</td>
                     <td>Matara</td>
                     <td>070</td>
-                    <!--                <td>150.00</td>-->
+                    &lt;!&ndash;                <td>150.00</td>&ndash;&gt;
                 </tr>
                 <tr>
                     <td>97121V</td>
-                    <!--                <td colspan="2">Larry the Bird</td>-->
+                    &lt;!&ndash;                <td colspan="2">Larry the Bird</td>&ndash;&gt;
                     <td>Hasini</td>
                     <td>Labuduwa</td>
                     <td>077</td>
-                    <!--                <td>200.50</td>-->
-                </tr>
+                    &lt;!&ndash;                <td>200.50</td>&ndash;&gt;
+                </tr>-->
                 </tbody>
             </table>
         </section>
@@ -236,6 +241,39 @@
 <script src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/jquery/jquery-3.6.0.min.js"></script>
 <script>
+    $("#img").attr("src","assets/img/bat.png").width(50);
+    /*-------Start Add txt feld data to table (order)----*/
+    $("#btnAddbil").click(function (){
+        var item = $('#itemName').val();
+        var code = $("#itemcode").val();
+        var qty = $("#itemQty").val();
+        var price = $("#unitPrice").val();
+        var cost = $("#cost").val();
+
+        $('#tblOrder').append('<tr><td>' + code + '</td><td>' + item + '</td><td>' + qty + '</td><td>' +price + '</td><td>'+cost+'</td></tr>');
+        $('#itemName').val("");
+        $('#itemcode').val("");
+        $('#itemQty').val("");
+        $('#unitPrice').val("");
+        $('#cost').val("");
+
+        /*-------Start get customer in table for txt feld----*/
+        $("#tblOrder>tr").click(function (){
+            console.log(this);
+            $("#itemName").val($(this).children(":nth-child(2)").text());
+            $("#itemcode").val($(this).children(":nth-child(1)").text());
+            $("#itemQty").val($(this).children(":nth-child(3)").text());
+            $("#unitPrice").val($(this).children(":nth-child(4)").text());
+            $("#cost").val($(this).children(":nth-child(5)").text());
+        });
+        /*-------End get customer in table for txt feld----*/
+    });
+    /*-------End Add txt feld data to table----*/
+
+
+
+    /*-------End Add txt feld data to table (order)----*/
+
     /*-------Start Display peiview----*/
     $("#sec2").css("display", "none");
     $("#home").click(function () {
@@ -257,18 +295,25 @@
         var contact = $("#txtCustContact").val();
 
         $('#tbl').append('<tr><td>' + id + '</td><td>' + name + '</td><td>' + address + '</td><td>' + contact + '</td></tr>');
+        $('#txtCustName').val("");
+        $('#txtCustId').val("");
+        $('#txtCustAddres').val("");
+        $('#txtCustContact').val("");
+
+        /*-------Start get customer in table for txt feld----*/
+
+        $("#tbl>tr").click(function (){
+            console.log(this);
+            $("#txtCustName").val($(this).children(":nth-child(2)").text());
+            $("#txtCustId").val($(this).children(":nth-child(1)").text());
+            $("#txtCustAddres").val($(this).children(":nth-child(3)").text());
+            $("#txtCustContact").val($(this).children(":nth-child(4)").text());
+        });
+        /*-------End get customer in table for txt feld----*/
     });
     /*-------End Add txt feld data to table----*/
 
-    /*-------Start get customer in table for txt feld----*/
-       $("#tbl>tr").click(function (){
-           console.log(this);
-           $("#txtCustName").val($(this).children(":nth-child(2)").text());
-           $("#txtCustId").val($(this).children(":nth-child(1)").text());
-           $("#txtCustAddres").val($(this).children(":nth-child(3)").text());
-           $("#txtCustContact").val($(this).children(":nth-child(4)").text());
-       });
-    /*-------End get customer in table for txt feld----*/
+
 
 </script>
 <!--<script src="assets/js/script.js"></script>-->
